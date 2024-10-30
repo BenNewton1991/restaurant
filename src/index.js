@@ -3,10 +3,13 @@
 
 
 import "./menu.js";
+import "./about.js";
 import "./home.js";
 import "./buttons.js";
 import "./style.css";
 
-buttons();
-menu();
+document.addEventListener('DOMContentLoaded', () => { 
+    home(); 
 
+    
+});

@@ -1,4 +1,5 @@
-import view_image from "./Images/view.png";
+import view_image from "./Images/prison_chef.png";
+import icon_image from "./Images/pmLogo.png";
 
 
 const content = document.getElementById('content');
@@ -19,8 +20,22 @@ function home()
         let home_div = document.createElement('div');
         home_div.setAttribute('class', 'home_content');
         let title = document.createElement('h1');
-        title.textContent = "Restaurant Home Page";
+        title.textContent = "Prisoner Meals";
         home_div.appendChild(title);
+        let p = document.createElement('p');
+        p.textContent = "Meals by prisoners, for prisoners."
+        home_div.appendChild(p);
+
+        let icon = document.createElement('img');
+        icon.setAttribute('class', 'content_image');
+        icon.setAttribute('src', icon_image);
+        home_div.appendChild(icon)
+
+
+
+        let a = document.createElement('p');
+        a.textContent = "The chef: Ben. He\'s a good guy really..."
+        home_div.appendChild(a);
         let new_image = document.createElement('img');
         new_image.setAttribute('class', 'content_image');
         new_image.setAttribute('src', view_image);
